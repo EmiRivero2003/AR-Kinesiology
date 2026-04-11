@@ -315,3 +315,152 @@ textarea:focus {
 #formMessage {
   font-weight: 500;
 }
+
+/* (=== INJURIES PAGE ===) */
+.injuries-page {
+  padding: 3rem 1.5rem;
+}
+
+.injuries-page__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.injuries-page__tagline {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-vibrant-blue);
+  margin-bottom: 1rem;
+}
+
+.injuries-page h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.injuries-page p {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.injuries-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.injury-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.injury-card {
+  background-color: var(--color-light);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.injury-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.injury-card p {
+  margin-bottom: 0.8rem;
+}
+
+.injury-btn {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.injury-btn:hover {
+  background-color: var(--color-vibrant-blue);
+  color: var(--color-white);
+  transform: translateX(5px) scale(1.02);
+}
+
+.injury-btn.active {
+  background-color: var(--color-vibrant-blue);
+  color: var(--color-white);
+}
+
+/* (=== PRICES PAGE ===) */
+.prices-page {
+  padding: 3rem 1.5rem;
+}
+
+.prices-page__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prices-page__tagline {
+  font-size: small;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-vibrant-blue);
+  margin-bottom: 0.5rem;
+}
+
+.prices-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.prices-page p {
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+}
+
+.prices-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.price-card {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-card__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-vibrant-blue);
+  margin: 0.5rem 0;
+}
+
+.price-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.price-card p {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .prices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Muscle Strain",
+    "commonSymptoms": "Pain, stiffness, muscle weakness, and limited movement in the affected area.",
+    "possibleCauses": "Overuse, sudden movements, lifting heavy objects, or improper warm-up before activity.",
+    "basicCare": "Rest the affected muscle, avoid intense activity, and apply ice if swelling appears.",
+    "whenToSeeProfessional": "If pain is severe, persists for several days, or limits normal movement."
+  },
+  {
+    "name": "Ankle Sprain",
+    "commonSymptoms": "Swelling, bruising, pain when walking, and instability in the ankle.",
+    "possibleCauses": "Twisting the ankle, sudden changes in direction, or landing incorrectly.",
+    "basicCare": "Limit movement, keep the ankle elevated, and avoid putting weight on it if painful.",
+    "whenToSeeProfessional": "If walking is difficult, swelling is severe, or pain does not improve."
+  },
+  {
+    "name": "Muscle Tear",
+    "commonSymptoms": "Sharp pain, swelling, bruising, and significant loss of strength.",
+    "possibleCauses": "Sudden forceful movement, heavy lifting, or intense physical activity.",
+    "basicCare": "Stop activity immediately, rest the area, and avoid further strain.",
+    "whenToSeeProfessional": "If there is intense pain, visible bruising, or inability to use the muscle."
+  },
+  {
+    "name": "Tendonitis",
+    "commonSymptoms": "Pain around a joint, tenderness, and stiffness that worsens with movement.",
+    "possibleCauses": "Repetitive motion, overuse, or poor technique during physical activity.",
+    "basicCare": "Reduce repetitive movements, rest the joint, and monitor discomfort.",
+    "whenToSeeProfessional": "If pain persists, worsens over time, or limits daily activities."
+  },
+  {
+    "name": "Lower Back Pain",
+    "commonSymptoms": "Dull or sharp pain in the lower back, stiffness, and difficulty bending or lifting.",
+    "possibleCauses": "Poor posture, prolonged sitting, lifting incorrectly, or muscle imbalance.",
+    "basicCare": "Avoid prolonged sitting, maintain gentle movement, and be mindful of posture.",
+    "whenToSeeProfessional": "If pain is constant, radiates to the legs, or affects daily function."
+  }
+]

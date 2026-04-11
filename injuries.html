@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Kinesiology | Injuries</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">AR Kinesiology</a>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="injuries.html" class="active">Injuries</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="injuries-page">
+      <div class="injuries-page__content">
+        <p class="injuries-page__tagline">Injury Guidance</p>
+        <h1>Helpful Guidance for Common Pain and Injuries</h1>
+        <p>
+          Explore common symptoms, possible causes, and basic care suggestions
+          before your appointment. This information is general guidance and does
+          not replace a professional evaluation.
+        </p>
+
+        <div class="injuries-layout">
+          <div class="injury-list">
+            <button class="injury-btn" data-injury="Muscle Strain">Muscle Strain</button>
+            <button class="injury-btn" data-injury="Ankle Sprain">Ankle Sprain</button>
+            <button class="injury-btn" data-injury="Muscle Tear">Muscle Tear</button>
+            <button class="injury-btn" data-injury="Tendonitis">Tendonitis</button>
+            <button class="injury-btn" data-injury="Lower Back Pain">Lower Back Pain</button>
+          </div>
+
+          <div class="injury-card" id="injuryCard">
+            <h2>Select an injury</h2>
+            <p>
+              Choose one of the common injuries to see symptoms, possible causes,
+              basic care, and when professional evaluation may be recommended.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AR Kinesiology. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/injuries.js"></script>
+</body>
+</html>
