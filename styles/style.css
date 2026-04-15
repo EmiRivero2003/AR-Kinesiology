@@ -58,10 +58,10 @@ img {
 }
 
 .site-header {
-    font-family: var(--font-heading);
-    display: flex;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .site-nav {
@@ -462,5 +462,250 @@ textarea:focus {
 @media (min-width: 768px) {
   .prices-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* (=== CONTACT PAGE ===) */
+
+.contact-page {
+  padding: 3rem 1.5rem;
+}
+
+.contact-page__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-page__tagline {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-vibrant-blue);
+  margin-bottom: 0.5rem;
+}
+
+.contact-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-page p {
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-info-card,
+.contact-form-card {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.contact-info-card h2,
+.contact-form-card h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info-card p {
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-vibrant-blue);
+  box-shadow: 0 0 0 3px rgba(24, 92, 170, 0.12);
+}
+
+.contact-form .btn {
+  justify-self: start;
+}
+
+#formMessage {
+  font-weight: 500;
+}
+
+#formMessage.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+#formMessage.success {
+  color: green;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1.4fr;
+    align-items: start;
+  }
+}
+
+/* ==== HAMBURGER BUTTON ==== */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ==== MOBILE ====*/
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: var(--color-white);
+    padding: 5rem 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-header {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-logo {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+}
+
+.mobile-menu-header {
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ==== BACKGROUND ANIMATION ==== */
+.background-animation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    120deg,
+    rgba(0, 102, 204, 0.06),
+    rgba(0, 153, 255, 0.04),
+    rgba(255, 255, 255, 0.95)
+  );
+
+  background-size: 300% 300%;
+  animation: backgroundFlow 18s ease-in-out infinite;
+}
+
+@keyframes backgroundFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(0, 102, 204, 0.03),
+    transparent 60%
+  );
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, -80px);
   }
 }

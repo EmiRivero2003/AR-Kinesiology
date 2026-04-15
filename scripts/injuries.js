@@ -3,6 +3,7 @@ const card = document.getElementById("injuryCard");
 
 let injuriesData = [];
 
+// Load JSON data
 fetch("data/injuries.json")
   .then((response) => response.json())
   .then((data) => {
@@ -13,16 +14,21 @@ fetch("data/injuries.json")
     console.error("Error loading injuries data:", error);
   });
 
+// Button click events
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const selectedInjury = button.dataset.injury;
 
-    const injury = injuriesData.find((item) => item.name === selectedInjury);
+    const injury = injuriesData.find(
+      (item) => item.name === selectedInjury
+    );
 
     if (injury) {
+      // Active button style
       buttons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
+      // Animation out
       card.style.opacity = 0;
       card.style.transform = "translateY(10px)";
 
@@ -35,10 +41,10 @@ buttons.forEach((button) => {
           <p><strong>When to See a Professional:</strong> ${injury.whenToSeeProfessional}</p>
         `;
 
+        // Animation in
         card.style.opacity = 1;
         card.style.transform = "translateY(0)";
       }, 150);
     }
   });
 });
-  

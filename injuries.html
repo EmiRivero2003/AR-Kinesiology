@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <div class="background-animation"></div>
+  
   <header class="site-header">
     <div class="logo">
       <a href="index.html">AR Kinesiology</a>
     </div>
 
-    <nav class="site-nav">
+    <nav class="site-nav nav-links" id="navLinks">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="mobile-logo">AR Kinesiology</a>
+      </div>
+
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="appointment.html">Appointment</a></li>
@@ -22,7 +29,11 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="hamburger" id="hamburger">☰</div>
   </header>
+
+  <div id="overlay" class="menu-overlay"></div>
 
   <main>
     <section class="injuries-page">
@@ -61,5 +72,6 @@
   </footer>
 
   <script src="scripts/injuries.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
